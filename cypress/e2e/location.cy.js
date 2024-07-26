@@ -40,7 +40,7 @@ describe('share location', () => {
     cy.get('@getStoredLocation').should('have.been.called');
     cy.get('[data-cy="info-message"]').should('be.visible');
     cy.get('[data-cy="info-message"]').should('have.class','visible');
-    cy.get('[data-cy="info-message"]').should('not.be.visible');
     cy.tick(2000);
+    cy.get('[data-cy="info-message"]').should('not.be.visible');
   });
 });
